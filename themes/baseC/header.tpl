@@ -19,7 +19,7 @@
         </div>
     </div>
     <div>
-         <p class="title"> 又一个 MDBOOK 网站</p>
+         <p class="title"> docooler's Blog</p>
          <p>万物之始，大道至简，衍化至繁。</p>
     </div>
 </header>
