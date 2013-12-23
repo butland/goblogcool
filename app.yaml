@@ -1,0 +1,31 @@
+application: goblogcool
+version: mdbook-21
+runtime: go
+api_version: go1
+
+default_expiration: "7d 0h"
+
+handlers:
+
+- url: /assets
+  static_dir: assets
+
+- url: /themes/(.*\.(gif|png|jpg|js|css|htm|html|swf))
+  static_files: themes/\1
+  upload: themes/(.*\.(gif|png|jpg|js|css|htm|html|swf))
+
+- url: /favicon\.ico
+  static_files: themes/favicon.ico
+  upload: themes/favicon\.ico
+  mime_type: image/x-icon
+
+- url: /robots\.txt
+  static_files: themes/robots.txt
+  upload: themes/robots.txt
+
+- url: /_sys/admin/.*
+  script: _go_app
+  login: required
+
+- url: /.*
+  script: _go_app

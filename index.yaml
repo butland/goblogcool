@@ -1,0 +1,29 @@
+indexes:
+
+- kind: Post
+  ancestor: yes
+  properties:
+  - name: Id
+    direction: desc
+  - name: Version
+    direction: desc
+  - name: Status
+    direction: asc
+
+- kind: Snapshot
+  properties:
+  - name: Id
+    direction: desc
+  - name: Version
+    direction: desc
+  - name: Status
+    direction: asc
+
+- kind: Path
+  properties:
+  - name: Path
+    direction: asc
+  - name: NewPath
+    direction: asc
+  - name: Id
+    direction: desc

@@ -1,0 +1,53 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td { background: transparent; border: 0; margin: 0; padding: 0; vertical-align: baseline; -webkit-font-smoothing: antialiased; }
+body { line-height: 1.6; background: white; }
+
+#bar { height: 32px; border-bottom: 1px #ccc solid; background-color: #f2f2f2; box-shadow: 0 0 10px #222; position: relative; z-index: 99; font-family: arial,sans-serif; }
+#control { position: absolute; right: 0px; top: 2px; height: 26px; width: 200px; }
+    #control .button { font-size: 12px; text-decoration: none; color: #000; }
+
+#title { font-size: 18px; line-height: 32px; padding-left: 20px; color: #232223; font-weight: normal; }
+    #title #quickbtn { font-size: 12px; list-style: none; }
+        #title #quickbtn li { display: block; float: left; margin: 0 5px; }
+            #title #quickbtn li a { color: #333; }
+
+#container { position: relative; overflow: hidden; }
+    #container > .pane { position: absolute; top: 0; bottom: 0; right: 0; left: auto; }
+        #container > .pane:first-child { left: 0; right: auto; border-right: 1px #ccc solid; }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment { height: 0px; display: block; background-color: transparent; }
+::-webkit-scrollbar-track-piece { background: #fff; }
+::-webkit-scrollbar-thumb { background: #fff; }
+    ::-webkit-scrollbar-thumb:vertical { border-right: 4px #6f6f6f solid; height: 50px; }
+    ::-webkit-scrollbar-thumb:horizontal { border-bottom: 4px #6f6f6f solid; width: 50px; }
+.dark::-webkit-scrollbar-track-piece { background: #141414; }
+.dark::-webkit-scrollbar-thumb { background: #141414; }
+::-webkit-scrollbar-thumb:hover { background: #6f6f6f; border: 0; }
+.button, .uploadify-button { border-radius: 2px; border: 1px #ccc solid; min-width: 80px; height: 20px; display: inline-block; text-align: center; /*font-weight: bold;*/ font: bold 12px Arial, Helvetica, sans-serif; line-height: 20px; background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,white), color-stop(4%,#F2F2F2), color-stop(100%,#EEE)); }
+    .button:hover, .button.hover, .uploadify:hover .uploadify-button { background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,white), color-stop(4%,#EEE), color-stop(100%,#DEDEDE)); }
+    .button:active, .button.active { -webkit-box-shadow: inset #ccc 0 0 5px; box-shadow: inset #ccc 0 0 5px; }
+
+.uploadify { position: relative; margin-bottom: 1em; display: inline; }
+    .uploadify object { margin-top: 4px; }
+.uploadify-button.disabled { background-color: #D0D0D0; color: #808080; }
+.uploadify-queue { margin-bottom: 1em; position: absolute; right: 210px; top: 1px; width: 290px; }
+.uploadify-queue-item { border-radius: 2px; font: 10px Verdana, Geneva, sans-serif; max-width: 350px; padding: 2px 10px; border: solid 1px #6f6f6f; }
+.uploadify-error { background-color: #FDE5DD !important; }
+.uploadify-queue-item .cancel a { background: url('uploadify-cancel.png') 0 0 no-repeat; float: right; height: 16px; text-indent: -9999px; width: 16px; }
+.uploadify-queue-item.completed { background-color: #E5E5E5; }
+.uploadify-progress { background-color: #E5E5E5; margin-top: 5px; width: 100%; }
+.uploadify-progress-bar { background-color: #0099FF; height: 3px; width: 1px; }
+
+.d-content{font-family:'Microsoft YaHei';}
+    .d-content h2 { margin: 10px 0; }
+.d-content p { line-height:30px;}
+.d-content input{outline:0; font-size:16px; border:#ccc solid 1px; padding:10px;color:#333; font-weight:bold;font-family:'Microsoft YaHei'; width:300px;}
